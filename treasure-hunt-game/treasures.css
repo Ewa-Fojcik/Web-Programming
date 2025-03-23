@@ -1,0 +1,123 @@
+:root {
+    --color1: rgb(255, 227, 170);
+    --color2: rgb(244, 189, 72);
+    --color3: rgb(145, 104, 55);
+    --color4: rgb(57, 57, 21);
+    --gradiant1: linear-gradient(60deg, rgb(236, 161, 57) 45%, rgb(236, 209, 172), rgb(239, 150, 27));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    scale: 80%;
+}
+
+body {
+    background: var(--gradiant1);
+    height: fit-content;
+}
+
+main {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 2em 4fr 4fr 2em;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+#game-name {
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: center;
+    align-self: center;
+}
+
+#game {
+    grid-area: 2 / 2 / 4 / 3;
+    z-index: 100;
+    background-color: var(--color1);
+    width: 80vh;
+    height: 80vh;
+    align-self: center;
+    margin: auto;
+    border: 2px solid var(--color4);
+}
+
+#objectives {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: var(--color1);
+    border: 2px solid var(--color4);
+    border-radius: 2em;
+    padding: 2em;
+    height: 15em;
+    line-height: 1.5;
+}
+
+#stats {
+    grid-area: 1 / 3 / 3 / 4;
+    background-color: var(--color1);
+    border: 2px solid var(--color4);
+    border-radius: 2em;
+    font-weight: bolder;
+    text-align: center;
+    font-size: larger;
+    height: 15em;
+    line-height: 2.5;
+}
+
+#rules-1,
+#rules-2 {
+    grid-area: 3 / 1 / 5 / 2;
+    background-color: var(--color1);
+    border: 2px solid var(--color4);
+    padding: 2em;
+    border-radius: 2em;
+    line-height: 1.5;
+}
+
+#error-message {
+    grid-area: 4 / 2 / 5 / 3;
+    height: 50%;
+    text-align: center;
+}
+
+#performance-index {
+    grid-area: 2 / 2 / 4 / 3;
+    text-align: center;
+    background-color: var(--color1);
+    margin: auto;
+    padding: 2em;
+    border-radius: 2em;
+    margin-top: 5em;
+}
+
+#end-setup,
+#end-game-button {
+    grid-area: 3 / 3 / 5 / 4;
+    background-color: var(--color1);
+    height: 50%;
+    width: 60%;
+    align-self: center;
+    border: 2px solid var(--color4);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+    font-weight: bolder;
+}
+
+.sq {
+    background-color: var(--color2);
+    margin: 0.3em;
+}
+
+.sq:hover {
+    background-color: var(--color3);
+    margin: 0.4em;
+}
