@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMP519 Assignment 4 - API Interface</title>
+    <script src="interface.js"></script>
+    <link rel="stylesheet" href="interface.css">
+</head>
+
+<body>
+    <h1>Basketball Teams & Players - API Interface</h1>
+    <hr>
+    <form id="apiForm">
+        <label for="method">HTTP Method:</label>
+        <select id="method" name="method">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PATCH">PATCH</option>
+            <option value="DELETE">DELETE</option>
+        </select>
+        <br><br>
+
+        <label for="resource">Resource Path:</label>
+        <input type="text" id="resource" name="resource" size="100" placeholder="e.g., /v1/teams">
+        <br><br>
+
+        <label for="body">Request Body (JSON):</label>
+        <br>
+        <textarea id="body" name="body" cols="100" rows="10" placeholder="Optional JSON body..."></textarea>
+        <br><br>
+
+        <button type="button" onclick="sendRequest()">Send Request</button>
+        <button type="button" onclick="clearResponse()">Clear Response</button>
+    </form>
+
+    <hr>
+
+    <h2>Response:</h2>
+    <p><strong>Status Code:</strong> <span id="status"></span></p>
+    <pre id="response"></pre>
+
+    <div id="instructions">
+        <h2>API Instructions</h2>
+        <dl>
+            <dt>Request method for retrieving information on all teams</dt>
+            <dd>GET</dd>
+    
+            <dt>Resource path for retrieving information on all teams</dt>
+            <dd>/v1/teams</dd>
+    
+            <dt>Request method for retrieving information on all players of team {teamId}</dt>
+            <dd>GET</dd>
+    
+            <dt>Resource path for retrieving information on all players of team {teamId}</dt>
+            <dd>/v1/teams/{teamId}/players</dd>
+    
+            <dt>Request method for retrieving information on player {playerId} of team {teamId}</dt>
+            <dd>GET</dd>
+    
+            <dt>Resource path for retrieving information on player {playerId} of team {teamId}</dt>
+            <dd>/v1/teams/{teamId}/players/{playerId}</dd>
+    
+            <dt>Request method for adding a player to team {teamId}</dt>
+            <dd>POST</dd>
+    
+            <dt>Resource path for adding a player to team {teamId}</dt>
+            <dd>/v1/teams/{teamId}/players</dd>
+    
+            <dt>Sample request body for adding a player to team {teamId}</dt>
+            <dd>{ "surname": "Doe", "given_names": "John", "nationality": "British", "date_of_birth": "1999-04-20" }</dd>
+    
+            <dt>Request method for updating parts of the information on player {playerId} of team {teamId}</dt>
+            <dd>PATCH</dd>
+    
+            <dt>Resource path for updating parts of the information on player {playerId} of team {teamId}</dt>
+            <dd>/v1/teams/{teamId}/players/{playerId}</dd>
+    
+            <dt>Sample request body for updating parts of the information on player {playerId} of team {teamId}</dt>
+            <dd>{ "nationality": "Scottish" }</dd>
+    
+            <dt>Request method for deleting player {playerId} from team {teamId}</dt>
+            <dd>DELETE</dd>
+    
+            <dt>Resource path for deleting player {playerId} from team {teamId}</dt>
+            <dd>/v1/teams/{teamId}/players/{playerId}</dd>
+        </dl>
+    </div>
+</body>
+
+</html>

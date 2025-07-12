@@ -1,0 +1,150 @@
+/* style.css - Final Clean Version
+ * COMP519 Assignment 4 - API Interface Styling (inspired by previous assignment)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: rgb(87, 6, 6);
+    --secondary-color: rgb(239, 150, 27);
+    --background-color: rgb(234, 227, 213);
+    --hover-color: rgb(192, 129, 11);
+    --text-color: rgb(58, 14, 2);
+    --form-background: rgb(250, 243, 230);
+}
+
+* {
+    resize: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: var(--form-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--hover-color);
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+#response {
+    background-color: white;
+    border: 1px solid var(--hover-color);
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+#status {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description Section */
+section[name="description"] {
+    background-color: var(--form-background);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid var(--hover-color);
+}
+
+section[name="description"] dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section[name="description"] dl dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Instructions Box Styling */
+#instructions {
+    background-color: var(--form-background);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--hover-color);
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#instructions h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#instructions dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#instructions dl dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
