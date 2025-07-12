@@ -72,12 +72,3 @@ To set up this project locally, you will need a web server environment with PHP 
 * **API Security:** Implementing measures to safeguard against common web vulnerabilities.
 * **Problem Solving:** Addressing complex requirements such as resource path handling, error responses, and data integrity.
 * **Clean Code Practices:** Adherence to coding standards, including commenting and referencing external sources.
-
-## Author
-
-**Ewa Fojcik**
-* MSc Data Science and Artificial Intelligence (University of Liverpool)
-* [Link to your LinkedIn Profile (Highly Recommended)]
-* [Link to your personal portfolio/website (if you have one)]
-
----
