@@ -24,23 +24,6 @@ The application provides a system for university students to book IT training se
 * **Frontend:** HTML5 (minimal JavaScript usage, restricted to `submit()` function as per project requirements)
 * **Deployment Environment:** Departmental Apache/MySQL server (University of Liverpool)
 
-## Setup and Installation
-
-To set up this project locally (for development/testing purposes):
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
-    ```
-2.  **Database Setup:**
-    * Import the provided `database_dump.sql` (or similar name) file into your local MySQL server.
-    * Ensure your database name and credentials in the PHP connection file (e.g., `db_config.php` or similar) are updated to match your local setup.
-3.  **Web Server Configuration:**
-    * Place the PHP and HTML files within your web server's (e.g., Apache, Nginx) document root.
-    * Ensure your web server is configured to process PHP files.
-4.  **Access:** Open your web browser and navigate to the project's entry point (e.g., `http://localhost/training.php`).
-
 ## Testing
 
 The application's functionality was thoroughly tested against all specified requirements, including:
