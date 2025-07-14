@@ -35,11 +35,3 @@ The application's functionality was thoroughly tested against all specified requ
 ## Code Standards & Documentation
 
 The codebase adheres to the COMP519 Coding Standard. All external resources, language constructs, and functions not covered in lectures are properly cited and referenced within the code comments and a dedicated `references.txt` (or similar) file, ensuring academic integrity and maintainability.
-
-## Learning Outcomes Demonstrated
-
-This project showcases proficiency in:
-* Developing sophisticated server-side web applications.
-* Choosing appropriate architectures for web applications.
-* Making informed and critical decisions in web development contexts.
-* Applying robust input validation and database transaction management.
