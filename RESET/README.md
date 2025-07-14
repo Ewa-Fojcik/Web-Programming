@@ -40,28 +40,6 @@ This repository presents a comprehensive RESTful web service and a minimalist cl
 * **Frontend:** HTML, CSS, JavaScript (Ajax)
 * **Tools:** `uglifyjs-3` for JavaScript minification.
 
-## How to Set Up and Run (Local Development)
-
-To set up this project locally, you will need a web server environment with PHP and MySQL installed (e.g., XAMPP, WAMP, MAMP, or a custom LAMP/LEMP stack).
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/EwaFojcik/](https://github.com/EwaFojcik/)[your-repo-name].git
-    cd [your-repo-name]
-    ```
-2.  **Database Setup:**
-    * Create a MySQL database (e.g., `sports_teams_db`).
-    * Import the provided `database_dump.sql` (or similar) into your new database. This dump will contain initial data for three teams and three players per team.
-3.  **Configure Database Connection:**
-    * Open the PHP file responsible for database connection (e.g., `config.php` or `db.php`).
-    * Update the database credentials (hostname, database name, username, password) to match your local MySQL setup.
-4.  **Place Project Files:**
-    * Copy all PHP, HTML, CSS, and JavaScript files into your web server's document root (e.g., `htdocs` for XAMPP).
-    * Ensure `interface.js` is the minified version and `interface.pretty.js` is kept separately if needed.
-5.  **Access the Application:**
-    * Open your web browser and navigate to the interface URL (e.g., `http://localhost/interface.html`).
-    * The RESTful service will be accessible via a base URL (e.g., `http://localhost/v1`).
-
 ## Skills Demonstrated
 
 * **RESTful API Development:** Designing and implementing a fully functional RESTful web service with CRUD operations.
